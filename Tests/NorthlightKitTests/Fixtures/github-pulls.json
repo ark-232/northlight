@@ -1,0 +1,51 @@
+{
+  "data": {
+    "reviewRequested": {
+      "issueCount": 2,
+      "nodes": [
+        {
+          "number": 285,
+          "title": "Bundle Carlito and Liberation fonts",
+          "isDraft": false,
+          "updatedAt": "2026-10-19T17:02:11Z",
+          "reviewDecision": "REVIEW_REQUIRED",
+          "repository": {"name": "quillify", "isPrivate": false},
+          "commits": {"nodes": [{"commit": {"statusCheckRollup": {"state": "SUCCESS"}}}]}
+        },
+        {
+          "number": 41,
+          "title": "Move the bid totals to the summary sheet",
+          "isDraft": false,
+          "updatedAt": "2026-10-19T12:30:00Z",
+          "reviewDecision": null,
+          "repository": {"name": "acme-bid", "isPrivate": true},
+          "commits": {"nodes": [{"commit": {"statusCheckRollup": null}}]}
+        }
+      ]
+    },
+    "authored": {
+      "issueCount": 3,
+      "nodes": [
+        {
+          "number": 312,
+          "title": "Add GitHub inbox and Actions widgets",
+          "isDraft": false,
+          "updatedAt": "2026-10-19T16:45:00Z",
+          "reviewDecision": "CHANGES_REQUESTED",
+          "repository": {"name": "northlight", "isPrivate": false},
+          "commits": {"nodes": [{"commit": {"statusCheckRollup": {"state": "FAILURE"}}}]}
+        },
+        {
+          "number": 1224,
+          "title": "Tip the appointment memo template",
+          "isDraft": true,
+          "updatedAt": "2026-10-18T20:00:00Z",
+          "reviewDecision": "APPROVED",
+          "repository": {"name": "web-app", "isPrivate": false},
+          "commits": {"nodes": [{"commit": {"statusCheckRollup": {"state": "PENDING"}}}]}
+        },
+        {}
+      ]
+    }
+  }
+}

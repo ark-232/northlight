@@ -1,0 +1,114 @@
+name: Northlight
+options:
+  bundleIdPrefix: com.arkwerx
+  createIntermediateGroups: true
+  deploymentTarget:
+    tvOS: "26.0"
+    macOS: "26.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: "7W6LLR2DK7"
+    SWIFT_STRICT_CONCURRENCY: complete
+
+packages:
+  NorthlightKit:
+    path: ..
+
+targets:
+  Northlight:
+    type: application
+    platform: tvOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: Northlight
+    dependencies:
+      - package: NorthlightKit
+        product: NorthlightKit
+      - package: NorthlightKit
+        product: NorthlightUI
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.arkwerx.northlight
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: YES
+        # Only OS-standard crypto (TLS), so TestFlight skips the per-build
+        # export-compliance prompt.
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Northlight uses this Apple TV's location to set the place its weather, sky and earthquakes describe.
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: Northlight listens on your local network for your Mac, which tells it what your coding agents are doing.
+        ASSETCATALOG_COMPILER_APPICON_NAME: App Icon & Top Shelf Image
+    info:
+      path: Northlight/Info.plist
+      properties:
+        NSBonjourServices: [_northlight._tcp]
+        GCSupportsMultipleMicroGamepads: true
+
+  NorthlightMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: NorthlightMac
+      - path: ../scripts/northlight-statusline.sh
+        buildPhase: resources
+    dependencies:
+      - package: NorthlightKit
+        product: NorthlightKit
+      - package: NorthlightKit
+        product: NorthlightAgent
+      - package: NorthlightKit
+        product: NorthlightUI
+    info:
+      path: NorthlightMac/Info.plist
+      properties:
+        LSUIElement: true
+        NSBonjourServices: [_northlight._tcp]
+    entitlements:
+      path: NorthlightMac/NorthlightMac.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.network.client: true
+        com.apple.security.files.user-selected.read-only: true
+        com.apple.security.files.bookmarks.app-scope: true
+        com.apple.security.personal-information.calendars: true
+    settings:
+      base:
+        PRODUCT_NAME: Northlight
+        PRODUCT_BUNDLE_IDENTIFIER: com.arkwerx.northlight
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: Northlight finds your Apple TV on your local network to show it what your coding agents are doing.
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+        INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription: Northlight reads the calendars you choose and shows their next two weeks on your Apple TV.
+
+  NorthlightUITests:
+    type: bundle.ui-testing
+    platform: tvOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: NorthlightUITests
+    dependencies:
+      - target: Northlight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.arkwerx.northlight.uitests
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Northlight:
+    build:
+      targets:
+        Northlight: all
+    test:
+      targets:
+        - NorthlightUITests
+  NorthlightMac:
+    build:
+      targets:
+        NorthlightMac: all

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "15283749012",
+    "unread": true,
+    "reason": "review_requested",
+    "updated_at": "2026-10-19T17:02:11Z",
+    "last_read_at": null,
+    "subject": {
+      "title": "Bundle Carlito and Liberation fonts",
+      "url": "https://api.github.com/repos/octo/quillify/pulls/285",
+      "latest_comment_url": "https://api.github.com/repos/octo/quillify/pulls/285",
+      "type": "PullRequest"
+    },
+    "repository": {
+      "id": 801234567,
+      "node_id": "R_kgDOL8xYZw",
+      "name": "quillify",
+      "full_name": "octo/quillify",
+      "private": false,
+      "owner": {"login": "octo", "id": 583231, "type": "User"},
+      "html_url": "https://github.com/octo/quillify",
+      "description": "Typeset forms from Markdown",
+      "fork": false,
+      "url": "https://api.github.com/repos/octo/quillify"
+    },
+    "url": "https://api.github.com/notifications/threads/15283749012",
+    "subscription_url": "https://api.github.com/notifications/threads/15283749012/subscription"
+  },
+  {
+    "id": "15283311877",
+    "unread": true,
+    "reason": "mention",
+    "updated_at": "2026-10-19T15:40:02Z",
+    "last_read_at": "2026-10-18T09:12:44Z",
+    "subject": {
+      "title": "Price the ACME bid before Friday",
+      "url": "https://api.github.com/repos/octo/acme-bid/issues/12",
+      "latest_comment_url": "https://api.github.com/repos/octo/acme-bid/issues/comments/2410093321",
+      "type": "Issue"
+    },
+    "repository": {
+      "id": 801234999,
+      "node_id": "R_kgDOL8xZaQ",
+      "name": "acme-bid",
+      "full_name": "octo/acme-bid",
+      "private": true,
+      "owner": {"login": "octo", "id": 583231, "type": "User"},
+      "html_url": "https://github.com/octo/acme-bid",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/octo/acme-bid"
+    },
+    "url": "https://api.github.com/notifications/threads/15283311877",
+    "subscription_url": "https://api.github.com/notifications/threads/15283311877/subscription"
+  },
+  {
+    "id": "15281002345",
+    "unread": true,
+    "reason": "subscribed",
+    "updated_at": "2026-10-19T08:00:31Z",
+    "last_read_at": null,
+    "subject": {
+      "title": "v6.0.0",
+      "url": "https://api.github.com/repos/swiftlang/swift-format/releases/251877120",
+      "latest_comment_url": "https://api.github.com/repos/swiftlang/swift-format/releases/251877120",
+      "type": "Release"
+    },
+    "repository": {
+      "id": 162208245,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjIyMDgyNDU=",
+      "name": "swift-format",
+      "full_name": "swiftlang/swift-format",
+      "private": false,
+      "owner": {"login": "swiftlang", "id": 42816656, "type": "Organization"},
+      "html_url": "https://github.com/swiftlang/swift-format",
+      "description": "Formatting technology for Swift source code",
+      "fork": false,
+      "url": "https://api.github.com/repos/swiftlang/swift-format"
+    },
+    "url": "https://api.github.com/notifications/threads/15281002345",
+    "subscription_url": "https://api.github.com/notifications/threads/15281002345/subscription"
+  },
+  {
+    "id": "15280887766",
+    "unread": true,
+    "reason": "ci_activity",
+    "updated_at": "2026-10-19T06:21:09Z",
+    "last_read_at": null,
+    "subject": {
+      "title": "CI workflow run failed for main branch",
+      "url": null,
+      "latest_comment_url": null,
+      "type": "CheckSuite"
+    },
+    "repository": {
+      "id": 801230001,
+      "node_id": "R_kgDOL8xAAQ",
+      "name": "northlight",
+      "full_name": "octo/northlight",
+      "private": false,
+      "owner": {"login": "octo", "id": 583231, "type": "User"},
+      "html_url": "https://github.com/octo/northlight",
+      "description": "A widget dashboard for Apple TV",
+      "fork": false,
+      "url": "https://api.github.com/repos/octo/northlight"
+    },
+    "url": "https://api.github.com/notifications/threads/15280887766",
+    "subscription_url": "https://api.github.com/notifications/threads/15280887766/subscription"
+  },
+  {
+    "id": "15279900001",
+    "unread": true,
+    "reason": "author",
+    "updated_at": "2026-10-18T22:10:00Z",
+    "last_read_at": null,
+    "subject": {
+      "title": "Where should the briefing go on weekends?",
+      "url": "https://api.github.com/repos/octo/aurora/discussions/7",
+      "latest_comment_url": null,
+      "type": "Discussion"
+    },
+    "repository": {
+      "id": 801230777,
+      "node_id": "R_kgDOL8xBBQ",
+      "name": "aurora",
+      "full_name": "octo/aurora",
+      "private": false,
+      "owner": {"login": "octo", "id": 583231, "type": "User"},
+      "html_url": "https://github.com/octo/aurora",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/octo/aurora"
+    },
+    "url": "https://api.github.com/notifications/threads/15279900001",
+    "subscription_url": "https://api.github.com/notifications/threads/15279900001/subscription"
+  }
+]

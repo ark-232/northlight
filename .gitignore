@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+DerivedData/
+build/
+**/build/
+*.xcuserstate
+xcuserdata/
+
+# XcodeGen output — regenerate with `cd App && xcodegen generate`
+App/Northlight.xcodeproj/
+App/*/Info.plist
+App/*/*.entitlements
+
+# The calendar feed URL is a bearer secret.
+App/Northlight/Secrets.swift
+.claude/
